@@ -1,0 +1,4 @@
+rootProject.name = 'dataprocessor'
+
+include 'content-publisher'
+include 'content-subscriber'
