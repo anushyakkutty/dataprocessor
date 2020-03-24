@@ -59,7 +59,7 @@ Creates a new content object and adds it to database.
 ```
 curl -d '{"content":"malayalam", "timestamp": "2018-10-09 00:12:12+0100"}'  -H "Content-Type: application/json"  -X POST http://localhost:8080/content
 ``````
-
+Created messages are visbile in the dashboard at realtime
 - GET endpoint 
 
 Returns the saved contents enriched with the ```longest_palindrome_size``` property,
