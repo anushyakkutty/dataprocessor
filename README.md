@@ -2,19 +2,19 @@
 
 This assignment solves the following use cases : 
 
-● REST endpoint accepting a JSON payload, and publishes it to a ```REDIS``` PubSub topic.
+-  REST endpoint accepting a JSON payload, and publishes it to a ```REDIS``` PubSub topic.
 
-● PubSub topic consumer that persists the received JSON payload to ```REDIS``` database.
+- PubSub topic consumer that persists the received JSON payload to ```REDIS``` database.
 
-● The received JSON payload is broadcasted to listening
+-  The received JSON payload is broadcasted to listening
 browser clients via ```Websockets```.
 
-● REST endpoint that receives all messages from the database enriched with 
+-  REST endpoint that receives all messages from the database enriched with 
 the ``longest_palindrome_size`` property.
  
-● A working ```docker-compose``` setup and configuration for running the solution.
+-  A working ```docker-compose``` setup and configuration for running the solution.
 
-● The real time message delivery can be viewed in an ```html``` page.
+-  The real time message delivery can be viewed in an ```html``` page.
 
 
 ## Design Diagram
