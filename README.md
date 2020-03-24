@@ -55,11 +55,11 @@ A dashboard to view the real time messages -> http://localhost:8081/index.html
 
 - POST endpoint 
 
-Creates a new content object and adds it to database.
+Creates a new content object and adds it to database.Thse messages are visbile in the dashboard at realtime.
 ```
 curl -d '{"content":"malayalam", "timestamp": "2018-10-09 00:12:12+0100"}'  -H "Content-Type: application/json"  -X POST http://localhost:8080/content
 ``````
-Created messages are visbile in the dashboard at realtime
+
 - GET endpoint 
 
 Returns the saved contents enriched with the ```longest_palindrome_size``` property,
