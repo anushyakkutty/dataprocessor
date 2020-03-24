@@ -28,6 +28,9 @@ public class MessageSubscriberService implements MessageListener  {
         } catch (IOException e) {
             log.error("Exception while trying to read a message from topic.");
         }
-        websocketMessagingService.send(content);
+
+        if (content != null) {
+            websocketMessagingService.send(content);
+        }
     }
 }
