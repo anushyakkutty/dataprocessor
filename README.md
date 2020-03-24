@@ -55,7 +55,7 @@ A dashboard to view the real time messages -> http://localhost:8081/index.html
 
 - POST endpoint 
 
-Creates a new content object and adds it to database.Thse messages are visbile in the dashboard at realtime.
+Creates a new content object and adds it to database.These messages are visbile in the dashboard at realtime.
 ```
 curl -d '{"content":"malayalam", "timestamp": "2018-10-09 00:12:12+0100"}'  -H "Content-Type: application/json"  -X POST http://localhost:8080/content
 ``````
