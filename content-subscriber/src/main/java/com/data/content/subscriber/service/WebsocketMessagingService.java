@@ -11,6 +11,6 @@ public class WebsocketMessagingService {
     private final SimpMessagingTemplate template;
 
     public void send(Content content ) {
-        template.convertAndSend("/topic/greetings", content);
+        template.convertAndSend("/topic/messages", content);
     }
 }
