@@ -47,30 +47,25 @@ After a successful start ,
 -  A content-subscriber service runs on port ```8081```.
 -  A Redis server runs on port ``6379``.
 
+### Message Dashboard  
+A dashboard to view the real time messages -> http://localhost:8081/index.html
+- Note : User should click on  ```connect``` button to subscribe for real time events. 
+
 ### APIs
 
 - POST endpoint 
 
 Creates a new content object and adds it to database.
 ```
-curl
--d '{"content":"malayalam", "timestamp": "2018-10-09 00:12:12+0100"}' 
--H "Content-Type: application/json" 
--X POST http://localhost:8080/content
-
+curl -d '{"content":"malayalam", "timestamp": "2018-10-09 00:12:12+0100"}'  -H "Content-Type: application/json"  -X POST http://localhost:8080/content
 ``````
 
 - GET endpoint 
 
 Returns the saved contents enriched with the ```longest_palindrome_size``` property,
 ``` 
-curl http://localhost:8081/palindromes
-[{"content":"malayalam","timestamp":"2018-10-08 23:12:12+0000","longest_palindrome_size":9}]
+curl http://localhost:8081/content/palindromes
 ```
-
-### Message Dashboard  
-A dashboard to view the real time messages -> http://localhost:8081/index.html
-- Note : User should click on  ```connect``` button to subscribe for real time events. 
 
 ### Swagger Documentation
 

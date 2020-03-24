@@ -51,7 +51,7 @@ public class ContentControllerTest {
     @Test
     public void testGET() throws Exception {
         when(repo.findAll()).thenReturn(List.of(new Content("1", "malayalam", "2018-10-08 23:12:12+000", 5)));
-        ResultActions result = mockMvc.perform(MockMvcRequestBuilders.get("/palindromes")
+        ResultActions result = mockMvc.perform(MockMvcRequestBuilders.get("/content/palindromes")
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isOk());
     }

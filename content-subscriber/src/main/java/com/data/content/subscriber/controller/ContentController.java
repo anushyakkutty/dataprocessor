@@ -23,7 +23,7 @@ public class ContentController {
 
     public final ContentService service;
 
-    @RequestMapping(value = "/palindromes", method = RequestMethod.GET)
+    @RequestMapping(value = "/content/palindromes", method = RequestMethod.GET)
     @ApiOperation(value = "Fetches the contents from the database.")
     @ApiResponses({
             @ApiResponse(code = HttpServletResponse.SC_OK, message = "Contents returned successfully with the longest palindrome size.")})
