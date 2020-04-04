@@ -1,4 +1,4 @@
-# Backend assignment - Data processor
+# Data processor pipeline.
 
 This assignment solves the following use cases : 
 
