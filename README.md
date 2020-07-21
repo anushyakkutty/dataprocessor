@@ -1,6 +1,8 @@
-# Data processor pipeline.
+# Data flow model.
 
-This assignment solves the following use cases : 
+The data flow model project is a publisher - subscriber model that aims at performing complex data modification functionalities in a quick and efficient manner. I use this model to experiment with many open source projects and this helps me in making decisions about the approaches and best practises that needs to be defined for my projects that are currently deployed in production.
+
+## What does this do? 
 
 -  REST endpoint accepting a JSON payload, and publishes it to a ```REDIS``` PubSub topic.
 
